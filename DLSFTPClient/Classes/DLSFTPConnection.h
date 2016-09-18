@@ -30,7 +30,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DLSFTP.h"
+#import "DLSFTPClient.h"
 
 @class DLSFTPFile;
 @class DLSFTPRequest;

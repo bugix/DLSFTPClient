@@ -1,0 +1,19 @@
+//
+//  DLSFTPClient iOS.h
+//  DLSFTPClient iOS
+//
+//  Created by Ryan on 9/18/16.
+//  Copyright © 2016 Dan Leehr. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+//! Project version number for DLSFTPClient iOS.
+FOUNDATION_EXPORT double DLSFTPClient_iOSVersionNumber;
+
+//! Project version string for DLSFTPClient iOS.
+FOUNDATION_EXPORT const unsigned char DLSFTPClient_iOSVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <DLSFTPClient_iOS/PublicHeader.h>
+
+

@@ -33,7 +33,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include "libssh2.h"
-#include "libssh2_config.h"
+#include "libssh2_publickey.h"
 #include "libssh2_sftp.h"
 #import "DLSFTPConnection.h"
 #import "DLSFTPRequest.h"
@@ -350,7 +350,7 @@ static NSString * const SFTPClientCompleteRequestException = @"SFTPClientComplet
 
         // get user auth methods
         char * authmethods = NULL;
-        while (   (authmethods = libssh2_userauth_list(session, [self.username UTF8String], strlen([self.username UTF8String]))) == NULL
+        while (   (authmethods = libssh2_userauth_list(session, [self.username UTF8String], (unsigned int) strlen([self.username UTF8String]))) == NULL
                && (libssh2_session_last_errno(session) == LIBSSH2_ERROR_EAGAIN)
                && weakSelf.isConnected) {
             waitsocket(socketFD, session);
@@ -850,7 +850,7 @@ LIBSSH2_USERAUTH_KBDINT_RESPONSE_FUNC(response) {
         const char *password = [connection.password UTF8String];
         responses[0].text = malloc(strlen(password) * sizeof(char) + 1);
         strcpy(responses[0].text, password);
-        responses[0].length = strlen(password);
+        responses[0].length = (unsigned int) strlen(password);
     }
 }
 

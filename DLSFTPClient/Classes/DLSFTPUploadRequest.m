@@ -46,7 +46,7 @@ static const size_t cBufferSize = 8192;
 @property (nonatomic, strong) DLSFTPFile *uploadedFile;
 @property (nonatomic) BOOL shouldResume;
 
-@property (nonatomic) int sftp_result;
+@property (nonatomic) ssize_t sftp_result;
 @property (nonatomic) int read_error;
 
 @property (nonatomic, assign) LIBSSH2_SFTP_HANDLE *handle;
@@ -190,7 +190,7 @@ static const size_t cBufferSize = 8192;
                              }
                              dispatch_data_applier_t applier = ^bool(dispatch_data_t region, size_t offset, const void *buffer, size_t size) {
                                  // send the buffer
-                                 size_t sftp_result = 0;
+                                 ssize_t sftp_result = 0;
                                  while (   weakSelf.isCancelled == NO
                                         && (sftp_result = libssh2_sftp_write(weakSelf.handle, buffer + offset, size)) == LIBSSH2SFTP_EAGAIN) {
                                      // update shouldcontinue into the waitsocket file desctiptor

@@ -57,6 +57,36 @@
 		37F90D2415E13FB6006F8FB7 /* FileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F90D2315E13FB6006F8FB7 /* FileBrowserViewController.m */; };
 		37F90D2715E14D87006F8FB7 /* DLFileSizeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F90D2615E14D87006F8FB7 /* DLFileSizeFormatter.m */; };
 		37F90D2A15E1B00B006F8FB7 /* FileDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F90D2915E1B00B006F8FB7 /* FileDownloadViewController.m */; };
+		9441FD7D1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9441FD7B1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD841D8EFAFF005A3F0C /* DLSFTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734F04C15D69AE30078A7E5 /* DLSFTPConnection.m */; };
+		9441FD851D8EFAFF005A3F0C /* DLSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3738FE4115D72B9600D4BE07 /* DLSFTPFile.m */; };
+		9441FD861D8EFAFF005A3F0C /* NSDictionary+SFTPFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3738FE4815D7694C00D4BE07 /* NSDictionary+SFTPFileAttributes.m */; };
+		9441FD871D8EFAFF005A3F0C /* DLSFTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDA9C16E596CC00E96C64 /* DLSFTPRequest.m */; };
+		9441FD881D8EFAFF005A3F0C /* DLSFTPDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAA316E97D2600E96C64 /* DLSFTPDownloadRequest.m */; };
+		9441FD891D8EFAFF005A3F0C /* DLSFTPListFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDA9F16E8430600E96C64 /* DLSFTPListFilesRequest.m */; };
+		9441FD8A1D8EFAFF005A3F0C /* DLSFTPMakeDirectoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAA616EAD62200E96C64 /* DLSFTPMakeDirectoryRequest.m */; };
+		9441FD8B1D8EFAFF005A3F0C /* DLSFTPRemoveDirectoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAA916EAE26C00E96C64 /* DLSFTPRemoveDirectoryRequest.m */; };
+		9441FD8C1D8EFAFF005A3F0C /* DLSFTPRemoveFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAB816EB913900E96C64 /* DLSFTPRemoveFileRequest.m */; };
+		9441FD8D1D8EFAFF005A3F0C /* DLSFTPUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAAC16EAE4ED00E96C64 /* DLSFTPUploadRequest.m */; };
+		9441FD8E1D8EFAFF005A3F0C /* DLSFTPMoveRenameRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAB216EB881E00E96C64 /* DLSFTPMoveRenameRequest.m */; };
+		9441FD8F1D8EFB0C005A3F0C /* DLSFTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAA116E845A000E96C64 /* DLSFTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD901D8EFB0C005A3F0C /* DLSFTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3734F04B15D69AE30078A7E5 /* DLSFTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD911D8EFB0C005A3F0C /* DLSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3738FE4015D72B9600D4BE07 /* DLSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD921D8EFB0C005A3F0C /* NSDictionary+SFTPFileAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3738FE4715D7694C00D4BE07 /* NSDictionary+SFTPFileAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD931D8EFB0C005A3F0C /* DLSFTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDA9B16E596CC00E96C64 /* DLSFTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD941D8EFB0C005A3F0C /* DLSFTPDownloadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAA216E97D2600E96C64 /* DLSFTPDownloadRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD951D8EFB0C005A3F0C /* DLSFTPListFilesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDA9E16E8430600E96C64 /* DLSFTPListFilesRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD961D8EFB0C005A3F0C /* DLSFTPMakeDirectoryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAA516EAD62200E96C64 /* DLSFTPMakeDirectoryRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD971D8EFB0C005A3F0C /* DLSFTPRemoveDirectoryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAA816EAE26B00E96C64 /* DLSFTPRemoveDirectoryRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD981D8EFB0C005A3F0C /* DLSFTPRemoveFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAB716EB913900E96C64 /* DLSFTPRemoveFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD991D8EFB0C005A3F0C /* DLSFTPUploadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAAB16EAE4ED00E96C64 /* DLSFTPUploadRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD9A1D8EFB0C005A3F0C /* DLSFTPMoveRenameRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAB116EB881E00E96C64 /* DLSFTPMoveRenameRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD9B1D8EFB4E005A3F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3734F03015D699FE0078A7E5 /* Foundation.framework */; };
+		9441FD9C1D8EFB55005A3F0C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D0944F172DB84700375E11 /* CFNetwork.framework */; };
+		9441FD9D1D8EFE04005A3F0C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3734F04E15D69B190078A7E5 /* libcrypto.a */; };
+		9441FD9E1D8EFE04005A3F0C /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3734F04F15D69B190078A7E5 /* libssh2.a */; };
+		9441FD9F1D8EFE04005A3F0C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3734F05015D69B190078A7E5 /* libssl.a */; };
+		9441FDA11D8EFE2C005A3F0C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9441FDA01D8EFE2C005A3F0C /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,7 +147,7 @@
 		375BDA9C16E596CC00E96C64 /* DLSFTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFTPRequest.m; sourceTree = "<group>"; };
 		375BDA9E16E8430600E96C64 /* DLSFTPListFilesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFTPListFilesRequest.h; sourceTree = "<group>"; };
 		375BDA9F16E8430600E96C64 /* DLSFTPListFilesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFTPListFilesRequest.m; sourceTree = "<group>"; };
-		375BDAA116E845A000E96C64 /* DLSFTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSFTP.h; sourceTree = "<group>"; };
+		375BDAA116E845A000E96C64 /* DLSFTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSFTPClient.h; sourceTree = "<group>"; };
 		375BDAA216E97D2600E96C64 /* DLSFTPDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFTPDownloadRequest.h; sourceTree = "<group>"; };
 		375BDAA316E97D2600E96C64 /* DLSFTPDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFTPDownloadRequest.m; sourceTree = "<group>"; };
 		375BDAA516EAD62200E96C64 /* DLSFTPMakeDirectoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFTPMakeDirectoryRequest.h; sourceTree = "<group>"; };
@@ -159,6 +189,10 @@
 		37F90D2615E14D87006F8FB7 /* DLFileSizeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLFileSizeFormatter.m; sourceTree = "<group>"; };
 		37F90D2815E1B00B006F8FB7 /* FileDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloadViewController.h; sourceTree = "<group>"; };
 		37F90D2915E1B00B006F8FB7 /* FileDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloadViewController.m; sourceTree = "<group>"; };
+		9441FD791D8EFAD7005A3F0C /* DLSFTPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLSFTPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9441FD7B1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSFTPClient_iOS.pch; sourceTree = "<group>"; };
+		9441FD7C1D8EFAD7005A3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9441FDA01D8EFE2C005A3F0C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +237,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9441FD751D8EFAD7005A3F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9441FDA11D8EFE2C005A3F0C /* libz.tbd in Frameworks */,
+				9441FD9D1D8EFE04005A3F0C /* libcrypto.a in Frameworks */,
+				9441FD9E1D8EFE04005A3F0C /* libssh2.a in Frameworks */,
+				9441FD9F1D8EFE04005A3F0C /* libssl.a in Frameworks */,
+				9441FD9C1D8EFB55005A3F0C /* CFNetwork.framework in Frameworks */,
+				9441FD9B1D8EFB4E005A3F0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -214,6 +261,7 @@
 				3734F04A15D69A800078A7E5 /* DemoApp */,
 				3734F03415D699FE0078A7E5 /* Classes */,
 				37DB18AE1699EB300053D51A /* Tests */,
+				9441FD7A1D8EFAD7005A3F0C /* DLSFTPClient iOS */,
 				3734F02D15D699FE0078A7E5 /* Frameworks */,
 				3734F02B15D699FE0078A7E5 /* Products */,
 			);
@@ -225,6 +273,7 @@
 				3734F02A15D699FE0078A7E5 /* DLSFTPClient.app */,
 				372F7BE4162CDDE60038F852 /* libDLSFTPClient.a */,
 				37DB18A91699EB300053D51A /* DLSFTPClientTests.octest */,
+				9441FD791D8EFAD7005A3F0C /* DLSFTPClient.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +281,7 @@
 		3734F02D15D699FE0078A7E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9441FDA01D8EFE2C005A3F0C /* libz.tbd */,
 				3738FE3D15D704E900D4BE07 /* libz.dylib */,
 				3734F04E15D69B190078A7E5 /* libcrypto.a */,
 				3734F04F15D69B190078A7E5 /* libssh2.a */,
@@ -248,7 +298,7 @@
 		3734F03415D699FE0078A7E5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				375BDAA116E845A000E96C64 /* DLSFTP.h */,
+				375BDAA116E845A000E96C64 /* DLSFTPClient.h */,
 				3734F04B15D69AE30078A7E5 /* DLSFTPConnection.h */,
 				3734F04C15D69AE30078A7E5 /* DLSFTPConnection.m */,
 				3738FE4015D72B9600D4BE07 /* DLSFTPFile.h */,
@@ -342,7 +392,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9441FD7A1D8EFAD7005A3F0C /* DLSFTPClient iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9441FD7B1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch */,
+				9441FD7C1D8EFAD7005A3F0C /* Info.plist */,
+			);
+			path = "DLSFTPClient iOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9441FD761D8EFAD7005A3F0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9441FD961D8EFB0C005A3F0C /* DLSFTPMakeDirectoryRequest.h in Headers */,
+				9441FD7D1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch in Headers */,
+				9441FD981D8EFB0C005A3F0C /* DLSFTPRemoveFileRequest.h in Headers */,
+				9441FD9A1D8EFB0C005A3F0C /* DLSFTPMoveRenameRequest.h in Headers */,
+				9441FD8F1D8EFB0C005A3F0C /* DLSFTPClient.h in Headers */,
+				9441FD941D8EFB0C005A3F0C /* DLSFTPDownloadRequest.h in Headers */,
+				9441FD951D8EFB0C005A3F0C /* DLSFTPListFilesRequest.h in Headers */,
+				9441FD921D8EFB0C005A3F0C /* NSDictionary+SFTPFileAttributes.h in Headers */,
+				9441FD901D8EFB0C005A3F0C /* DLSFTPConnection.h in Headers */,
+				9441FD911D8EFB0C005A3F0C /* DLSFTPFile.h in Headers */,
+				9441FD931D8EFB0C005A3F0C /* DLSFTPRequest.h in Headers */,
+				9441FD991D8EFB0C005A3F0C /* DLSFTPUploadRequest.h in Headers */,
+				9441FD971D8EFB0C005A3F0C /* DLSFTPRemoveDirectoryRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		372F7BE3162CDDE60038F852 /* DLSFTPClient */ = {
@@ -399,6 +481,24 @@
 			productReference = 37DB18A91699EB300053D51A /* DLSFTPClientTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		9441FD781D8EFAD7005A3F0C /* DLSFTPClient iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9441FD831D8EFAD7005A3F0C /* Build configuration list for PBXNativeTarget "DLSFTPClient iOS" */;
+			buildPhases = (
+				9441FD741D8EFAD7005A3F0C /* Sources */,
+				9441FD751D8EFAD7005A3F0C /* Frameworks */,
+				9441FD761D8EFAD7005A3F0C /* Headers */,
+				9441FD771D8EFAD7005A3F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DLSFTPClient iOS";
+			productName = "DLSFTPClient iOS";
+			productReference = 9441FD791D8EFAD7005A3F0C /* DLSFTPClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -408,6 +508,12 @@
 				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dan Leehr";
+				TargetAttributes = {
+					9441FD781D8EFAD7005A3F0C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 3734F02415D699FE0078A7E5 /* Build configuration list for PBXProject "DLSFTPClient" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -424,6 +530,7 @@
 				3734F02915D699FE0078A7E5 /* DLSFTPClientDemo */,
 				372F7BE3162CDDE60038F852 /* DLSFTPClient */,
 				37DB18A81699EB300053D51A /* DLSFTPClientTests */,
+				9441FD781D8EFAD7005A3F0C /* DLSFTPClient iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -446,6 +553,13 @@
 				37DB18D1169A3AB10053D51A /* ConnectionInfo.plist in Resources */,
 				37CDBC8E169FBBB900232688 /* testfile.jpg in Resources */,
 				3731A5A716CB2F8A00A238C2 /* privatekey.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441FD771D8EFAD7005A3F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +624,24 @@
 			files = (
 				37DB18B61699EB300053D51A /* DLSFTPClientTests.m in Sources */,
 				375BDABA16EB940000E96C64 /* DLSFTPClientPrivateKeyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441FD741D8EFAD7005A3F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9441FD891D8EFAFF005A3F0C /* DLSFTPListFilesRequest.m in Sources */,
+				9441FD8A1D8EFAFF005A3F0C /* DLSFTPMakeDirectoryRequest.m in Sources */,
+				9441FD8C1D8EFAFF005A3F0C /* DLSFTPRemoveFileRequest.m in Sources */,
+				9441FD8B1D8EFAFF005A3F0C /* DLSFTPRemoveDirectoryRequest.m in Sources */,
+				9441FD871D8EFAFF005A3F0C /* DLSFTPRequest.m in Sources */,
+				9441FD8D1D8EFAFF005A3F0C /* DLSFTPUploadRequest.m in Sources */,
+				9441FD8E1D8EFAFF005A3F0C /* DLSFTPMoveRenameRequest.m in Sources */,
+				9441FD851D8EFAFF005A3F0C /* DLSFTPFile.m in Sources */,
+				9441FD841D8EFAFF005A3F0C /* DLSFTPConnection.m in Sources */,
+				9441FD861D8EFAFF005A3F0C /* NSDictionary+SFTPFileAttributes.m in Sources */,
+				9441FD881D8EFAFF005A3F0C /* DLSFTPDownloadRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -999,6 +1131,231 @@
 			};
 			name = Release;
 		};
+		9441FD7E1D8EFAD7005A3F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "DLSFTPClient iOS/DLSFTPClient_iOS.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "DLSFTPClient iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DLSFTPClient/Libraries/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brittonmobile.DLSFTPClient-iOS";
+				PRODUCT_NAME = DLSFTPClient;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9441FD7F1D8EFAD7005A3F0C /* Debug With Optimizations */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "DLSFTPClient iOS/DLSFTPClient_iOS.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "DLSFTPClient iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DLSFTPClient/Libraries/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brittonmobile.DLSFTPClient-iOS";
+				PRODUCT_NAME = DLSFTPClient;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Debug With Optimizations";
+		};
+		9441FD801D8EFAD7005A3F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "DLSFTPClient iOS/DLSFTPClient_iOS.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "DLSFTPClient iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DLSFTPClient/Libraries/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brittonmobile.DLSFTPClient-iOS";
+				PRODUCT_NAME = DLSFTPClient;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9441FD811D8EFAD7005A3F0C /* Release Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "DLSFTPClient iOS/DLSFTPClient_iOS.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "DLSFTPClient iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DLSFTPClient/Libraries/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brittonmobile.DLSFTPClient-iOS";
+				PRODUCT_NAME = DLSFTPClient;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Release Distribution";
+		};
+		9441FD821D8EFAD7005A3F0C /* Release Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "DLSFTPClient iOS/DLSFTPClient_iOS.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "DLSFTPClient iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DLSFTPClient/Libraries/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brittonmobile.DLSFTPClient-iOS";
+				PRODUCT_NAME = DLSFTPClient;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Release Ad-Hoc";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1049,6 +1406,17 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9441FD831D8EFAD7005A3F0C /* Build configuration list for PBXNativeTarget "DLSFTPClient iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9441FD7E1D8EFAD7005A3F0C /* Debug */,
+				9441FD7F1D8EFAD7005A3F0C /* Debug With Optimizations */,
+				9441FD801D8EFAD7005A3F0C /* Release */,
+				9441FD811D8EFAD7005A3F0C /* Release Distribution */,
+				9441FD821D8EFAD7005A3F0C /* Release Ad-Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

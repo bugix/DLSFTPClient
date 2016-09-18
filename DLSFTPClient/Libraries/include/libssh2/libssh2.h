@@ -521,8 +521,8 @@ LIBSSH2_API int libssh2_userauth_password_ex(LIBSSH2_SESSION *session,
                                              LIBSSH2_PASSWD_CHANGEREQ_FUNC((*passwd_change_cb)));
 
 #define libssh2_userauth_password(session, username, password) \
- libssh2_userauth_password_ex((session), (username), strlen(username), \
-                              (password), strlen(password), NULL)
+ libssh2_userauth_password_ex((session), (username), (unsigned int) strlen(username), \
+                              (password), (unsigned int) strlen(password), NULL)
 
 LIBSSH2_API int
 libssh2_userauth_publickey_fromfile_ex(LIBSSH2_SESSION *session,
@@ -535,7 +535,7 @@ libssh2_userauth_publickey_fromfile_ex(LIBSSH2_SESSION *session,
 #define libssh2_userauth_publickey_fromfile(session, username, publickey, \
                                             privatekey, passphrase)     \
   libssh2_userauth_publickey_fromfile_ex((session), (username), \
-                                         strlen(username), (publickey), \
+                                         (unsigned int) strlen(username), (publickey), \
                                          (privatekey), (passphrase))
 
 LIBSSH2_API int
@@ -561,10 +561,10 @@ libssh2_userauth_hostbased_fromfile_ex(LIBSSH2_SESSION *session,
 #define libssh2_userauth_hostbased_fromfile(session, username, publickey, \
                                             privatekey, passphrase, hostname) \
  libssh2_userauth_hostbased_fromfile_ex((session), (username), \
-                                        strlen(username), (publickey), \
+                                        (unsigned int) strlen(username), (publickey), \
                                         (privatekey), (passphrase), \
-                                        (hostname), strlen(hostname), \
-                                        (username), strlen(username))
+                                        (hostname), (unsigned int) strlen(hostname), \
+                                        (username), (unsigned int) strlen(username))
 
 /*
  * response_callback is provided with filled by library prompts array,
@@ -581,7 +581,7 @@ libssh2_userauth_keyboard_interactive_ex(LIBSSH2_SESSION* session,
 #define libssh2_userauth_keyboard_interactive(session, username, \
                                               response_callback) \
  libssh2_userauth_keyboard_interactive_ex((session), (username), \
-                                          strlen(username), (response_callback))
+                                          (unsigned int) strlen(username), (response_callback))
 
 LIBSSH2_API int libssh2_poll(LIBSSH2_POLLFD *fds, unsigned int nfds,
                              long timeout);
@@ -636,8 +636,8 @@ LIBSSH2_API int libssh2_channel_setenv_ex(LIBSSH2_CHANNEL *channel,
                                           unsigned int value_len);
 
 #define libssh2_channel_setenv(channel, varname, value) \
- libssh2_channel_setenv_ex((channel), (varname), strlen(varname), (value), \
-                           strlen(value))
+ libssh2_channel_setenv_ex((channel), (varname), (unsigned int) strlen(varname), (value), \
+                           (unsigned int) strlen(value))
 
 LIBSSH2_API int libssh2_channel_request_pty_ex(LIBSSH2_CHANNEL *channel,
                                                const char *term,
@@ -647,7 +647,7 @@ LIBSSH2_API int libssh2_channel_request_pty_ex(LIBSSH2_CHANNEL *channel,
                                                int width, int height,
                                                int width_px, int height_px);
 #define libssh2_channel_request_pty(channel, term) \
- libssh2_channel_request_pty_ex((channel), (term), strlen(term), NULL, 0, \
+ libssh2_channel_request_pty_ex((channel), (term), (unsigned int) strlen(term), NULL, 0, \
                                 LIBSSH2_TERM_WIDTH, LIBSSH2_TERM_HEIGHT, \
                                 LIBSSH2_TERM_WIDTH_PX, LIBSSH2_TERM_HEIGHT_PX)
 
@@ -676,11 +676,11 @@ LIBSSH2_API int libssh2_channel_process_startup(LIBSSH2_CHANNEL *channel,
                                   NULL, 0)
 #define libssh2_channel_exec(channel, command) \
   libssh2_channel_process_startup((channel), "exec", sizeof("exec") - 1, \
-                                  (command), strlen(command))
+                                  (command), (unsigned int) strlen(command))
 #define libssh2_channel_subsystem(channel, subsystem) \
   libssh2_channel_process_startup((channel), "subsystem",              \
                                   sizeof("subsystem") - 1, (subsystem), \
-                                  strlen(subsystem))
+                                  (unsigned int) strlen(subsystem))
 
 LIBSSH2_API ssize_t libssh2_channel_read_ex(LIBSSH2_CHANNEL *channel,
                                             int stream_id, char *buf,
