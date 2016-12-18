@@ -31,7 +31,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DLSFTPClient.h"
+#import "DLSFTPRequestDelegate.h"
 
 typedef void(^DLSFTPRequestCancelHandler)(void);
 

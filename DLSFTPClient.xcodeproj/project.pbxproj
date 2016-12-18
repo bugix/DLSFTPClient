@@ -60,6 +60,7 @@
 		941195391E060D5D00931E82 /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 941194EA1E060D5D00931E82 /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9411953A1E060D5D00931E82 /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = 941194EB1E060D5D00931E82 /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9411953B1E060D5D00931E82 /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = 941194EC1E060D5D00931E82 /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		941195881E0610AE00931E82 /* DLSFTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 941195871E0610A200931E82 /* DLSFTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9441FD7D1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9441FD7B1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		9441FD841D8EFAFF005A3F0C /* DLSFTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734F04C15D69AE30078A7E5 /* DLSFTPConnection.m */; };
 		9441FD851D8EFAFF005A3F0C /* DLSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3738FE4115D72B9600D4BE07 /* DLSFTPFile.m */; };
@@ -72,7 +73,7 @@
 		9441FD8C1D8EFAFF005A3F0C /* DLSFTPRemoveFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAB816EB913900E96C64 /* DLSFTPRemoveFileRequest.m */; };
 		9441FD8D1D8EFAFF005A3F0C /* DLSFTPUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAAC16EAE4ED00E96C64 /* DLSFTPUploadRequest.m */; };
 		9441FD8E1D8EFAFF005A3F0C /* DLSFTPMoveRenameRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BDAB216EB881E00E96C64 /* DLSFTPMoveRenameRequest.m */; };
-		9441FD8F1D8EFB0C005A3F0C /* DLSFTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAA116E845A000E96C64 /* DLSFTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9441FD8F1D8EFB0C005A3F0C /* DLSFTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 375BDAA116E845A000E96C64 /* DLSFTPRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9441FD901D8EFB0C005A3F0C /* DLSFTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3734F04B15D69AE30078A7E5 /* DLSFTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9441FD911D8EFB0C005A3F0C /* DLSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3738FE4015D72B9600D4BE07 /* DLSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9441FD921D8EFB0C005A3F0C /* NSDictionary+SFTPFileAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3738FE4715D7694C00D4BE07 /* NSDictionary+SFTPFileAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -150,7 +151,7 @@
 		375BDA9C16E596CC00E96C64 /* DLSFTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFTPRequest.m; sourceTree = "<group>"; };
 		375BDA9E16E8430600E96C64 /* DLSFTPListFilesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFTPListFilesRequest.h; sourceTree = "<group>"; };
 		375BDA9F16E8430600E96C64 /* DLSFTPListFilesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFTPListFilesRequest.m; sourceTree = "<group>"; };
-		375BDAA116E845A000E96C64 /* DLSFTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSFTPClient.h; sourceTree = "<group>"; };
+		375BDAA116E845A000E96C64 /* DLSFTPRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSFTPRequestDelegate.h; sourceTree = "<group>"; };
 		375BDAA216E97D2600E96C64 /* DLSFTPDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFTPDownloadRequest.h; sourceTree = "<group>"; };
 		375BDAA316E97D2600E96C64 /* DLSFTPDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSFTPDownloadRequest.m; sourceTree = "<group>"; };
 		375BDAA516EAD62200E96C64 /* DLSFTPMakeDirectoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSFTPMakeDirectoryRequest.h; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 		941194EA1E060D5D00931E82 /* libssh2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2.h; sourceTree = "<group>"; };
 		941194EB1E060D5D00931E82 /* libssh2_publickey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2_publickey.h; sourceTree = "<group>"; };
 		941194EC1E060D5D00931E82 /* libssh2_sftp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2_sftp.h; sourceTree = "<group>"; };
+		941195871E0610A200931E82 /* DLSFTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSFTPClient.h; sourceTree = "<group>"; };
 		9441FD791D8EFAD7005A3F0C /* DLSFTPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLSFTPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9441FD7B1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSFTPClient_iOS.pch; sourceTree = "<group>"; };
 		9441FD7C1D8EFAD7005A3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -304,7 +306,8 @@
 		3734F03415D699FE0078A7E5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				375BDAA116E845A000E96C64 /* DLSFTPClient.h */,
+				941195871E0610A200931E82 /* DLSFTPClient.h */,
+				375BDAA116E845A000E96C64 /* DLSFTPRequestDelegate.h */,
 				3734F04B15D69AE30078A7E5 /* DLSFTPConnection.h */,
 				3734F04C15D69AE30078A7E5 /* DLSFTPConnection.m */,
 				3738FE4015D72B9600D4BE07 /* DLSFTPFile.h */,
@@ -440,8 +443,9 @@
 				9441FD961D8EFB0C005A3F0C /* DLSFTPMakeDirectoryRequest.h in Headers */,
 				9441FD7D1D8EFAD7005A3F0C /* DLSFTPClient_iOS.pch in Headers */,
 				9441FD981D8EFB0C005A3F0C /* DLSFTPRemoveFileRequest.h in Headers */,
+				941195881E0610AE00931E82 /* DLSFTPClient.h in Headers */,
 				9441FD9A1D8EFB0C005A3F0C /* DLSFTPMoveRenameRequest.h in Headers */,
-				9441FD8F1D8EFB0C005A3F0C /* DLSFTPClient.h in Headers */,
+				9441FD8F1D8EFB0C005A3F0C /* DLSFTPRequestDelegate.h in Headers */,
 				9441FD941D8EFB0C005A3F0C /* DLSFTPDownloadRequest.h in Headers */,
 				9441FD951D8EFB0C005A3F0C /* DLSFTPListFilesRequest.h in Headers */,
 				9441FD921D8EFB0C005A3F0C /* NSDictionary+SFTPFileAttributes.h in Headers */,
