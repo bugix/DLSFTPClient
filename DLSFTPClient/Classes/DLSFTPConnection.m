@@ -38,6 +38,7 @@
 #import "DLSFTPConnection.h"
 #import "DLSFTPRequest.h"
 #import <CFNetwork/CFNetwork.h>
+#import <sys/select.h>
 
 // disconnection callback
 LIBSSH2_DISCONNECT_FUNC(disconnected);
